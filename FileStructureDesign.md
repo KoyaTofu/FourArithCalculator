@@ -26,8 +26,8 @@
 ┃  ┃&emsp;&emsp;   return( [float] input_number )   
 ┃  ┃  
 ┃  ┗━ < 四則演算 > FourArith  
-┃&emsp;   fourArith( [Operator_t] ope_mode, [float] first_operand, [float] second_operand) 
-┃  ┃&emsp;&emsp;   return( [float] value )  
+┃&emsp;   fourArith( [Operator_t] ope_mode, [float] first_operand, [float] second_operand)  
+┃  &emsp;&emsp;   return( [float] value )  
 ┃  
 ┗━ << LCD 表示 >> DisplayLcd {他関数:generateText, caculateDigit}  
 &emsp;   displayLcd( [float] display_value )  
