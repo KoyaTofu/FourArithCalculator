@@ -18,13 +18,16 @@
 ┃&emsp;   judgOpeSw()  &emsp;   return( [OpeState_t] ope_state )  
 ┃  
 ┣━ << 演算管理 >> CalcManager {他関数:rstCalc, updFirst, startCalc, endCalc}  
-┃  ┃&emsp;   calcManager( [NumState_t] num_state, [OpeState_t] ope_state) &emsp;   return( [float] display_value )  
+┃  ┃&emsp;   calcManager( [NumState_t] num_state, [OpeState_t] ope_state)  
+┃  ┃&emsp;&emsp;   return( [float] display_value )  
 ┃  ┃  
 ┃  ┣━ < 現在値更新 > UpdateValue {他関数:rstDecDigit}  
-┃  ┃&emsp;   updateValue( [NumState_t] num_state, [float] upd_value) &emsp;   return( [float] input_number )   
+┃  ┃&emsp;   updateValue( [NumState_t] num_state, [float] upd_value)  
+┃  ┃&emsp;&emsp;   return( [float] input_number )   
 ┃  ┃  
 ┃  ┗━ < 四則演算 > FourArith  
-┃&emsp;   fourArith( [Operator_t] ope_mode, [float] first_operand, [float] second_operand) &emsp;   return( [float] value )  
+┃&emsp;   fourArith( [Operator_t] ope_mode, [float] first_operand, [float] second_operand) 
+┃  ┃&emsp;&emsp;   return( [float] value )  
 ┃  
 ┗━ << LCD 表示 >> DisplayLcd {他関数:generateText, caculateDigit}  
 &emsp;   displayLcd( [float] display_value )  
